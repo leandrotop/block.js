@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Block.js</title>
+    <style>
+        body{
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+        }
+        .logo{
+            margin: 0px;
+            color: #ffffff;
+            font-size: 20px;
+        }
+        .btn001{
+            background-color: #0026ff;
+            padding: 10px;
+            border: none;
+            width: 80%;
+        }
+        .divCodeBlock{
+            background-color: #1f1f1f;
+            border-right: solid 1px #414141;
+            position: absolute;
+            height: 100vh;
+            width: 30vw;
+            overflow-x: hidden;
+            overflow-y: auto;
+            display: flex;
+            justify-content: center;
+            padding-top: 60px;
+        }
+        .divCode{
+            background-color: #242424;
+            position: absolute;
+            left: calc(30vw + 1px);
+            height: 100vh;
+            width: calc(70vw - 1px);
+            overflow: auto;
+            padding-top: 100px;
+        }
+        .divTop{
+            background-color: #1f1f1f;
+            border-bottom: solid 1px #414141;
+            position: absolute;
+            padding: 10px;
+            width: 100vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="divCodeBlock" id="divCodeBlock">
+        <div style="width: 100%;">
+            <button class="btn001">teste</button></div>
+        </div>
+    <div class="divCode" id="divCode">
+    </div>
+    <div class="divTop">
+        <h1 class="logo">Block.Js</h1>
+    </div>
+<script>
+
+</script>
+</body>
+</html>
