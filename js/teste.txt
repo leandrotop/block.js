@@ -1,0 +1,114 @@
+<script>
+    var divVariavel = document.getElementById('divVariavel')
+    var divComparadores = document.getElementById('divComparadores')
+    var divConsole = document.getElementById('divConsole')
+    function divNone() {
+        divVariavel.style.display = 'none'
+        divComparadores.style.display = 'none'
+        divConsole.style.display = 'none'
+    }
+    divNone()
+    function openVariavel() {
+        if (divVariavel.style.display=='block') {
+            divNone()
+        } else {
+            divNone()
+            divVariavel.style.display = 'block'   
+        }
+    }
+    function openComparadores() {
+        if (divComparadores.style.display=='block') {
+            divNone()
+        } else {
+            divNone()
+            divComparadores.style.display = 'block'   
+        }
+    }
+    function openConsole() {
+        if (divComparadores.style.display=='block') {
+            divNone()
+        } else {
+            divNone()
+            divComparadores.style.display = 'block'   
+        }
+    }
+    function openConsole() {
+        if (divConsole.style.display=='block') {
+            divNone()
+        } else {
+            divNone()
+            divConsole.style.display = 'block'   
+        }
+    }
+</script>
+
+
+<script>
+    var btnId = ''
+    var btnIdAdd
+    function getBtnId(elemento) {
+        btnId = elemento.id
+        btnIdAdd = block[btnId]
+    }
+</script>
+
+
+<script>
+    var idElemento = 0
+    function addId() {
+        idElemento += 1
+        return idElemento
+    }
+    code1 = `
+
+    <div style="display: grid; width: 100px;">
+        <button class="btn000" style="width: unset; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">Block</button>
+        <button style="border: none;" onclick="getBtnId(this)" id="blockBtn">+</button>
+    </div>
+    <div id="blockAdd">
+    <div>
+
+    `
+    var block = {}
+    block.code = code1
+    block.blockBtn = 'blockAdd'
+    document.getElementById('divCode').innerHTML = block.code
+    function blockAdd(elemento) {
+        if (btnId=='') {
+        } else {
+            inputString = elemento.id
+            id = addId()
+            inputString = inputString.replace(/\(ID\)/g, id)
+            keyValueAirs = inputString.split("@@")
+            Block = {}
+            for (i = 0; i < keyValueAirs.length; i++) {
+                air = keyValueAirs[i].split("@")
+                key = air[0]
+                value = air[1]
+                block[key] = value
+            }
+            codefn = _var.code.replace(/\(ID\)/g, id)
+            document.getElementById(btnIdAdd).insertAdjacentHTML("beforebegin", codefn)
+            btnId = ''
+        }
+    }
+</script>
+
+<script>
+    var _var = {}
+    _var.script = 'var = /*(1)(ID)*/ //(ID)'
+    _var.code = `
+
+    <div style="display: grid; width: 300px;">
+        <button class="btn001" style="border-radius: 0px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;">var <input style="width: 100px;" type="text" placeholder="" onclick="_var_add(this)" id="/*(1)(ID)*/"> = <input style="width: 100px;" type="text" placeholder="" onclick="_var_add(this)" id="/*(2)(ID)*/"></button>
+        <button style="border: none; width: 100px;" onclick="getBtnId(this)" id="block">+</button>
+        <div id="div_(ID)">
+        </div>
+    </div>
+
+    ` 
+    function _var_add(elemento) {
+        elemento.placeholder = document.getElementById(elemento.id).value
+        elemento.value = ''
+    }
+</script>

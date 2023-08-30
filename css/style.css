@@ -1,0 +1,81 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+.logo{
+    margin: 0px;
+    color: #ffffff;
+    font-size: 20px;
+}
+input{
+    background-color: #e9e9e9;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+.btn000{
+    background-color: #ce92ff;
+    color: #242424;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: 800;
+}
+.btn001{
+    background-color: #92efff;
+    color: #242424;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: 800;
+}
+.btn002{
+    background-color: #92ff9b;
+    color: #242424;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: 800;
+}
+.btn003{
+    background-color: #fffd92;
+    color: #242424;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: 800;
+}
+.divCodeBlock{
+    background-color: #1f1f1f;
+    border-right: solid 1px #414141;
+    position: absolute;
+    height: 100vh;
+    width: 30vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+.divCode{
+    background-color: #242424;
+    position: absolute;
+    left: calc(30vw + 1px);
+    height: 100vh;
+    width: calc(70vw - 1px);
+    overflow: auto;
+    padding-top: 60px;
+    padding-left: 50px;
+}
+.divTop{
+    background-color: #1f1f1f;
+    border-bottom: solid 1px #414141;
+    position: absolute;
+    padding: 10px;
+    width: 100vw;
+}
